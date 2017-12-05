@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Workspace</title>
+  <title>Timecloud</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  
+  <!-- Pour rendre le site responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <%= render 'layouts/navigation' %>
   
   <p class="notice"><%= notice %></p>
