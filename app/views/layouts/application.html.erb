@@ -11,6 +11,8 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   
+  <%= favicon_link_tag 'favicon.ico' %>
+  
   <!-- Ajout du template-->
   
     <!-- Bootstrap Core CSS -->
@@ -49,8 +51,7 @@
   
   <%= render 'layouts/navigation' %>
   
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+  <%= render 'shared/message' %>
 
 <div class="container"><%= yield %></div>
 

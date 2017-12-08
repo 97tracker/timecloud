@@ -21,8 +21,13 @@ gem 'devise'
 
 # Installation de la lange
 gem 'devise-i18n'
+gem 'rails-i18n'
 
+#Pour la photo de profil
 gem 'paperclip'
+
+#Pour les notifications
+gem 'toastr-rails'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
