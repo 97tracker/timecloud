@@ -7,7 +7,7 @@ class Room < ActiveRecord::Base
   validates :nb_sdb, presence: true
   validates :nom_annonce, presence: true, length: {maximum: 75}
   validates :description_annonce, presence: true, length: {maximum: 600}
-  validates :adresse_annonce, presence: true,
-  validates :price, numericality: {only_integer: true, greater_than: 5}
+  validates :adresse_annonce, presence: true
+  validates :price, numericality: { only_integer: true, greater_than: 5}
   
 end
