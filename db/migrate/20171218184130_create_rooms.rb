@@ -5,7 +5,7 @@ class CreateRooms < ActiveRecord::Migration
       t.string :type_location
       t.integer :nb_personne
       t.integer :nb_chambre
-      t.string :nb_sdb_integer
+      t.integer :nb_sdb
       t.string :nom_annonce
       t.text :description_annonce
       t.string :adresse_annonce
