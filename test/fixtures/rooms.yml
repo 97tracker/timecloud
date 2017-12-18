@@ -1,0 +1,63 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type_bien: MyString
+  type_location: MyString
+  nb_personne: 1
+  nb_chambre: 1
+  nb_sdb_integer: MyString
+  nom_annonce: MyString
+  description_annonce: MyText
+  adresse_annonce: MyString
+  is_wifi: false
+  is_tv: false
+  is_petit_dejeuner: false
+  is_cuisine: false
+  is_couvert: false
+  is_lave_vaisselle: false
+  is_cafetiere: false
+  is_machine_a_laver: false
+  is_table_fer_repasser: false
+  is_armoire: false
+  is_shampoing: false
+  is_climatisation: false
+  is_terrasse: false
+  is_jardin: false
+  is_piscine: false
+  is_voiture: false
+  is_mer: false
+  is_lit_bebe: false
+  active: false
+  price: 1
+  user_id: 
+
+two:
+  type_bien: MyString
+  type_location: MyString
+  nb_personne: 1
+  nb_chambre: 1
+  nb_sdb_integer: MyString
+  nom_annonce: MyString
+  description_annonce: MyText
+  adresse_annonce: MyString
+  is_wifi: false
+  is_tv: false
+  is_petit_dejeuner: false
+  is_cuisine: false
+  is_couvert: false
+  is_lave_vaisselle: false
+  is_cafetiere: false
+  is_machine_a_laver: false
+  is_table_fer_repasser: false
+  is_armoire: false
+  is_shampoing: false
+  is_climatisation: false
+  is_terrasse: false
+  is_jardin: false
+  is_piscine: false
+  is_voiture: false
+  is_mer: false
+  is_lit_bebe: false
+  active: false
+  price: 1
+  user_id: 
