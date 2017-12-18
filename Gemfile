@@ -15,6 +15,7 @@ gem 'coffee-rails', '~> 4.1.0'
 
 # Installation de Bootstrap
 gem 'bootstrap-sass', '~> 3.3.7'
+gem "font-awesome-sass"
 
 # Installation de Devise
 gem 'devise'
@@ -28,6 +29,7 @@ gem 'paperclip'
 
 #Pour les notifications
 gem 'toastr-rails'
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
