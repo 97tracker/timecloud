@@ -513,3 +513,11 @@ input[type="checkbox"]:checked:before {
  color: #ff5a5f;
  
  }
+ 
+ .panel-heading.preview {
+     padding: 0;
+ }
+ 
+ .panel-heading.preview img {
+     width: 100%;
+ }

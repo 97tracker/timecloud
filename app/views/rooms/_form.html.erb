@@ -4,7 +4,7 @@
     </div>
     <div class="panel-body">
         <div class="container">
-            <%= form_for @room do |f| %>
+            <%= form_for @room, html: {multipart: true} do |f| %>
             <!-- Pour afficher les erreurs-->
                 <%= render 'shared/errors' %>
             <!-- Je gère le type de bien -->
@@ -60,6 +60,20 @@
                         <%= f.text_field :adresse_annonce, placeholder:"Où est situé votre logement ?", class:"form-control" %>
                     </div>
                 </div>
+                
+                <!-- Photos -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <span class="btn btn-default btn-file">
+                              <i class="fa fa-upload fa-lg"></i>Uploadez vos photos !
+                              <%= file_field_tag "images[]", type: :file, multipart: true %> <!-- multipart pour l'ajout de plusieurs photos en même temps -->
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- J'affiche les photos -->
+                <div id="photos"><%= render 'photos/list' %></div>
                 <!-- Les cases à cocher pour le check -->
                 <div class="row">
                     <div class="col-md-4">
