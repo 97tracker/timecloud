@@ -10,5 +10,6 @@ class User < ActiveRecord::Base
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
   
   has_many :rooms #un utilisateur peut avoir plusieurs annonces
+  has_many :reservations
  
 end
