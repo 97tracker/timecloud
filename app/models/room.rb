@@ -11,4 +11,8 @@ class Room < ActiveRecord::Base
   validates :adresse_annonce, presence: true
   validates :price, numericality: { only_integer: true, greater_than: 5}
   
+  #Geocoder 
+  geocoded_by :adresse_annonce
+  after_validation :geocode, if: :adresse_annonce_changed?
+  
 end

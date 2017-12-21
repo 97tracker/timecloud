@@ -33,6 +33,9 @@ gem 'toastr-rails'
 #Pour cloudinary
 gem 'paperclip-cloudinary'
 
+#Pour Google Maps
+gem 'geocoder'
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
