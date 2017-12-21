@@ -36,6 +36,9 @@ gem 'paperclip-cloudinary'
 #Pour Google Maps
 gem 'geocoder'
 
+#Pour le DatePicker
+gem 'jquery-ui-rails'
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
