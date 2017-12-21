@@ -30,6 +30,9 @@ gem 'paperclip'
 #Pour les notifications
 gem 'toastr-rails'
 
+#Pour cloudinary
+gem 'paperclip-cloudinary'
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
