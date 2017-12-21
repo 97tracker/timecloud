@@ -15,6 +15,9 @@ Rails.application.routes.draw do
             resources :reservations, only: [:create]
   end
   resources :photos
+  
+  get '/preload' => 'reservations#preload'
+  get '/preview' => 'reservations#preview'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
