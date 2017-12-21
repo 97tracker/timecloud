@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   root 'pages#home'
   
   resources :users, only: [:show]
-  resources :rooms do
+  resources :rooms, path: 'annonces' do
  
             resources :reservations, only: [:create]
   end
@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   
   get '/preload' => 'reservations#preload'
   get '/preview' => 'reservations#preview'
+  get '/your_trips' => 'reservations#your_trips', path: 'mes_locations'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
