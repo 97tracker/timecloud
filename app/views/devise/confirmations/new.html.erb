@@ -6,7 +6,7 @@
         <%= render 'shared/devise_errors' %>
       
         <div class="form-group">
-          <p>Saisissez l'adresse e-mail associée à votre compte, nous vous enverrons un lien par e-mail pour valider votre e-mail</p>
+          <p>Saisissez l'adresse e-mail associée à votre compte, nous vous enverrons un lien afin de valider votre compte.</p>
           <%= f.email_field :email, autofocus: true, class:"form-control", placeholder:"E-mail", value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %>
         </div>
       
