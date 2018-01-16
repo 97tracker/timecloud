@@ -8,7 +8,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <%= link_to 'TimeCloud', root_path, {:class=>"navbar-brand"} %>
+          <%= link_to 'Time Cloud', root_path, {:class=>"navbar-brand"} %>
         </div>
         
         <div id="navbar" class="navbar-collapse collapse">
@@ -16,7 +16,13 @@
             
             <li>
               <%= link_to new_room_path do %>
-              <i class="fa fa-home fa-lg"> Déposez votre annonce</i>
+              <i class="fa fa-hotel fa-lg"> Devenez hôte</i>
+              <% end %>
+            </li>
+            
+            <li>
+              <%= link_to new_room_path do %>
+              <i class="fa fa-key fa-lg"> Devenez concierge</i>
               <% end %>
             </li>
             

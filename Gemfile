@@ -39,6 +39,9 @@ gem 'geocoder'
 #Pour le DatePicker
 gem 'jquery-ui-rails'
 
+#Pour les recherches
+gem 'ransack'
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

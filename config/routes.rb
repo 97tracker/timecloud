@@ -23,6 +23,8 @@ Rails.application.routes.draw do
   get '/preview' => 'reservations#preview'
   get '/your_trips' => 'reservations#your_trips', path: 'mes_locations'
   get '/your_reservations' => 'reservations#your_reservations', path: 'mes_reservations'
+  
+  get '/search' => 'pages#search'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
