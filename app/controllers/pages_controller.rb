@@ -12,12 +12,12 @@ class PagesController < ApplicationController
       arrResult = Array.new
       
       if session[:tiimecloud_search] && session[:tiimecloud_search] != ""
-         @rooms_address = Room.where(active: true).near(session[:tiimecloud_search], 5, order:'distance')
+         @adresse_annonce = Room.where(active: true).near(session[:tiimecloud_search], 5, order:'distance')
       else
-         @rooms_address = Room.where(active: true).all
+         @adresse_annonce = Room.where(active: true).all
       end
       
-      @search = @rooms_address.ransack(params[:q])
+      @search = @adresse_annonce.ransack(params[:q])
       @rooms = @search.result
       
       @arrRooms = @rooms.to_a
